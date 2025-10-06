@@ -2,14 +2,14 @@ import logo from "@/assets/membaskins_logo.webp";
 import { TextAlignJustify } from "lucide-react";
 const TopNav = () => {
   return (
-    <nav className="">
+    <nav className="fixed w-full shadow-md bg-sidebar">
       <div className="py-2 px-4 flex justify-between items-center">
         <section>
           <figure className="flex gap-1  ">
             <img src={logo} alt="company logo" className="w-[]" />
             <figcaption className="flex flex-col self-center font-bold font-serif ">
-              <span className="text-primary">Membaskins</span>{" "}
-              <span className="text-sm">Branding & Interior</span>
+              <span className="text-primary uppercase ">Membaskins</span>{" "}
+              <span className="text-sm italic">Branding & Interior</span>
             </figcaption>
           </figure>
         </section>
