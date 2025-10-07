@@ -1,0 +1,119 @@
+import logo from "@/assets/membaskins_logo.webp";
+import { NavlinkData } from "@/lib/navLinkData";
+import { Link } from "react-router";
+import NavLinkComponent from "../navigation/navLinkComponent";
+import {
+  Facebook,
+  Headset,
+  Instagram,
+  Mail,
+  MapPin,
+  Music2,
+} from "lucide-react";
+import ReachOutListComponent from "./reachOutListComponent";
+import { PHONE_NUMBER } from "@/lib/constants";
+import SocialsComponent from "./socialsComponent";
+const Footer = () => {
+  return (
+    <footer>
+      <div className="container grid gap-2 mx-auto ">
+        <section className="grid gap-2 lg:grid-cols-4">
+          <section className="flex flex-col  gap-2 ">
+            <Link to={NavlinkData.HOME_PAGE.url}>
+              <figure className="flex items-center gap-2 ">
+                <img src={logo} alt="company logo" className="w-[100px]" />
+                <figcaption className="flex flex-col font-bold font-serif ">
+                  <span className="text-primary uppercase ">Membaskins </span>
+                  <span className="italic">Branding & Branding</span>
+                </figcaption>
+              </figure>
+            </Link>
+            <section>
+              <article className="">
+                <span className="font-bold text-primary">
+                  Membaskin Branding & Interior{" "}
+                </span>
+                <span>
+                  transforms ideas into impactful brands through storytelling,
+                  innovation, and design.
+                </span>
+              </article>
+            </section>
+          </section>
+          <section className="inline-flex flex-col gap-1 lg:justify-self-center">
+            <h4 className="font-bold text-lg text-primary">Quick Links</h4>
+            <ul className="grid gap-1">
+              {Object.values(NavlinkData).map((value, index) => (
+                <li>
+                  <NavLinkComponent
+                    url={value.url}
+                    title={value.title}
+                    key={index}
+                  />
+                </li>
+              ))}
+            </ul>
+          </section>
+          <section className="inline-flex flex-col gap-2 lg:justify-self-center">
+            <h4 className="font-bold text-lg text-primary">Reach Out</h4>
+            <ul className="grid gap-2 lg:gap-1">
+              <li>
+                <ReachOutListComponent icon={MapPin} title={"Nairobi, Kenya"} />
+              </li>
+              <li>
+                <ReachOutListComponent icon={Headset} title={PHONE_NUMBER} />
+              </li>
+              <li>
+                <ReachOutListComponent
+                  icon={Mail}
+                  title={"info@membaskins.co.ke"}
+                />
+              </li>
+            </ul>
+          </section>
+          <section className="lg:justify-self-center">
+            <h4 className="font-bold text-lg text-primary">Socials</h4>
+            <ul className="grid gap-2 lg:gap-1">
+              <li>
+                <SocialsComponent
+                  title={"Facebook"}
+                  icon={Facebook}
+                  url={"https://www.facebook.com/share/1GQeih2izC/"}
+                />
+              </li>
+              <li>
+                <SocialsComponent
+                  title={"Instagram"}
+                  icon={Instagram}
+                  url={
+                    "https://www.instagram.com/membaskins?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  }
+                />
+              </li>
+              <li>
+                <SocialsComponent
+                  icon={Music2}
+                  title={"Tiktok"}
+                  url="https://www.tiktok.com/@membaskins46?is_from_webapp=1&sender_device=pc"
+                />
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section className="grid gap-0.5 lg:text-center">
+          <hr className="h-2 bg-primary" />
+          <small className="font-bold">
+            <span>&copy; 2025 Membaskins Branding & Interior. </span>
+            <span className="text-primary ">All rights reserved</span>
+          </small>
+          <small className=" font-bold ">
+            Developed by Sareto Technologies
+          </small>
+        </section>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

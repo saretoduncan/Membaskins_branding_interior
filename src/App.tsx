@@ -1,6 +1,7 @@
 import NavBarContextWrapper from "@/components/context/navBarContextWrapper";
 import SideNav from "./components/custom_ui/navigation/sideNav";
 import TopNav from "./components/custom_ui/navigation/topNav";
+import Footer from "./components/custom_ui/footer_component/footer";
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
           <main></main>
         </section>
         <section>
-          <footer className="w-full bg-sidebar">footer</footer>
+          <footer className="w-full bg-sidebar p-4 border-t ">
+            <Footer/>
+          </footer>
         </section>
       </div>
     </>
