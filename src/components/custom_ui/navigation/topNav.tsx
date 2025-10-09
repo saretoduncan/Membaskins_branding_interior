@@ -9,7 +9,7 @@ import { Link } from "react-router";
 const TopNav = () => {
   const openSideNav = useContext(NavBarContext);
   return (
-    <nav className=" w-full   container mx-auto   ">
+    <nav className=" w-full  xl:w-[1040px] 2xl:w-[1280px]  mx-auto   ">
       <div className="py-2 px-4 flex justify-between items-center  ">
         <section>
           <Link to={NavlinkData.HOME_PAGE.url}>

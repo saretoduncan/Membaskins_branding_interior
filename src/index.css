@@ -188,3 +188,13 @@
     letter-spacing: var(--tracking-normal);
   }
 }
+@layer utilities {
+  .bg-mesh {
+    background-color: #f3f4f6;
+    background-image: 
+      radial-gradient(at 10% 20%, #a5b4fc 0px, transparent 50%),
+      radial-gradient(at 80% 0%, #fbcfe8 0px, transparent 50%),
+      radial-gradient(at 50% 100%, #bbf7d0 0px, transparent 50%),
+      radial-gradient(at 0% 100%, #fde68a 0px, transparent 50%);
+  }
+}

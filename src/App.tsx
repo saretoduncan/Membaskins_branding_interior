@@ -2,6 +2,7 @@ import NavBarContextWrapper from "@/components/context/navBarContextWrapper";
 import SideNav from "./components/custom_ui/navigation/sideNav";
 import TopNav from "./components/custom_ui/navigation/topNav";
 import Footer from "./components/custom_ui/footer_component/footer";
+import PublicRoutes from "./publicRoutes";
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
               </section>
             </NavBarContextWrapper>
           </header>
-          <main></main>
+          <main className="mt-17">
+            <PublicRoutes/>
+          </main>
         </section>
         <section>
           <footer className="w-full bg-sidebar p-4 border-t ">
