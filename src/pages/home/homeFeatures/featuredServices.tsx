@@ -1,6 +1,8 @@
 import carSignage from "@/assets/car_wrapper_design.webp";
 import CoreServicesCard from "@/components/custom_ui/common/coreServicesCard";
 import { Button } from "@/components/ui/button";
+import marpetSignage from "@/assets/marpet_signage.webp";
+import interiorDesign_1 from "@/assets/interior_design_1.webp";
 const FeaturedServices = () => {
   return (
     <div className="grid gap-4 xl:w-[1040px] xl:mx-auto 2xl:w-[1280px]">
@@ -22,14 +24,14 @@ const FeaturedServices = () => {
           }
         />
         <CoreServicesCard
-          serviceImg={carSignage}
+          serviceImg={interiorDesign_1}
           title={"Interior & Space Design"}
           description={
             "Transforming offices, shops, and homes through creative interior finishes like wallpapers, gypsum, lighting, and turf."
           }
         />
         <CoreServicesCard
-          serviceImg={carSignage}
+          serviceImg={marpetSignage}
           title={"Professional Signage & 3D Designs"}
           description={
             "Custom indoor and outdoor signage, light boxes, billboards, and 3D letters that elevate visibility."
