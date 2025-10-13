@@ -16,7 +16,7 @@ import SocialsComponent from "./socialsComponent";
 const Footer = () => {
   return (
     <footer>
-      <div className="container grid gap-2 mx-auto ">
+      <div className="w-full xl:w-[65rem] 2xl:w-[80rem] grid gap-2 mx-auto ">
         <section className="grid gap-2 lg:grid-cols-4">
           <section className="flex flex-col  gap-2 ">
             <Link to={NavlinkData.HOME_PAGE.url}>
@@ -104,7 +104,7 @@ const Footer = () => {
         <section className="grid gap-0.5 lg:text-center">
           <hr className="h-2 bg-primary" />
           <small className="font-bold">
-            <span>&copy; 2025 Membaskins Branding & Interior. </span>
+            <span>&copy; 2020 Membaskins Branding & Interior. </span>
             <span className="text-primary ">All rights reserved</span>
           </small>
           <small className=" font-bold ">
