@@ -1,8 +1,5 @@
 import { Button } from "@/components/ui/button";
-import vertoSignate from "@/assets/verto_2.webp";
-import zebraSinage from "@/assets/zebra_signage.webp";
-import safaricomSinage from "@/assets/safaricom_signage.webp";
-import safaricomCarWrap from "@/assets/safaricom_car_wrap.webp";
+import heroImg from "@/assets/hero_img.webp";
 const HomeHeroSection = () => {
   return (
     <div className=" relative bg-[linear-gradient(to_right,#d1d5db_1px,transparent_1px),linear-gradient(to_bottom,#d1d5db_1px,transparent_1px)] bg-[size:40px_40px]">
@@ -12,8 +9,10 @@ const HomeHeroSection = () => {
             <section className="grid gap-2 self-center xl:max-w-lg 2xl:max-w-xl ">
               <section className="grid gap-2 text-center md:text-start">
                 <h1 className="font-bold text-lg lg:text-2xl xl:text-4xl">
-                  <span className="text-primary capitalize">Best and reliable creative branding agency</span> in Kenya
-                  transforming ideas.
+                  <span className="text-primary capitalize">
+                    Best and reliable creative branding agency
+                  </span>{" "}
+                  in Kenya transforming ideas into reality.
                 </h1>
                 <article className="xl:text-lg capitalize">
                   Membaskins Branding & Interior crafts impactful, authentic
@@ -26,39 +25,8 @@ const HomeHeroSection = () => {
                 <Button variant={"outline"}>Contact Us</Button>
               </section>
             </section>
-            <section className="lg:justify-self-center">
-              <div className="grid gap-2 p-4 sm:grid-cols-2  auto-rows-[50px] lg:auto-rows-[60px] ">
-                <div className="col-span-2 row-span-2 overflow-hidden rounded-xl">
-                  <img
-                    src={vertoSignate}
-                    alt=""
-                    className="h-full w-full object-cover "
-                  />
-                </div>
-                <div className="col-span-1 row-span-2 overflow-hidden rounded-xl">
-                  <img
-                    src={safaricomCarWrap}
-                    alt=""
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div className="col-span-1 row-span-2 overflow-hidden rounded-xl">
-                  <img
-                    src={zebraSinage}
-                    alt=""
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div className=" relative col-span-2 row-span-2 overflow-hidden rounded-xl">
-                  <img
-                    src={safaricomSinage}
-                    alt=""
-                    className="h-full w-full object-cover"
-                  />
-
-                  <div className="absolute inset-0 bg-black/40 hover:bg-black/50 transition-colors duration-500"></div>
-                </div>
-              </div>
+            <section className="">
+              <img src={heroImg} alt="" className="w-3/4 mx-auto" />
             </section>
           </div>
         </div>

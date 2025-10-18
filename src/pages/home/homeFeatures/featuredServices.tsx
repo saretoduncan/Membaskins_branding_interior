@@ -3,17 +3,11 @@ import CoreServicesCard from "@/components/custom_ui/common/coreServicesCard";
 import { Button } from "@/components/ui/button";
 import marpetSignage from "@/assets/marpet_signage.webp";
 import interiorDesign_1 from "@/assets/interior_design_1.webp";
+import TitleComponent from "@/components/custom_ui/common/titleComponent";
 const FeaturedServices = () => {
   return (
     <div className="grid gap-4 xl:w-[1040px] xl:mx-auto 2xl:w-[1280px]">
-      <section className="space-y-2">
-        <h4 className="text-center font-bold text-2xl">Core Services</h4>
-        <div className="flex gap-1 justify-center">
-          <hr className="h-1 w-5 bg-primary" />
-          <hr className="h-1 w-7 bg-primary" />
-          <hr className="h-1 w-12 bg-primary" />
-        </div>
-      </section>
+      <TitleComponent title={"Core Services"} />
 
       <section className="grid gap-4  md:grid-cols-2 lg:md:grid-cols-4">
         <CoreServicesCard
