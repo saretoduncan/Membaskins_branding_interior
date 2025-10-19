@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+
 import {
   Card,
   CardContent,
@@ -29,7 +29,6 @@ const CoreServicesCard: React.FC<ICoreServiceProps> = ({
         </div>
         <CardTitle>{title}</CardTitle>
         <CardDescription>{description}</CardDescription>
-        <Button variant={"outline"}> Learn More</Button>
       </CardContent>
     </Card>
   );

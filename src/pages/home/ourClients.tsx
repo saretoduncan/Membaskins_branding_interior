@@ -3,8 +3,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import africanFuelLogo from "@/assets/africa_fuel_logo.webp";
@@ -39,28 +37,27 @@ const OurClients = () => {
       <div className="p-4 xl:w-[1040px] mx-auto 2xl:w-[1280px] grid gap-5">
         <TitleComponent title={"Our Clients"} />
         <div>
-            <Carousel
-          opts={{
-            loop: true,
-          }}
-          plugins={[plugin.current]}
-          className="w-full  mx-auto "
-        >
-          <CarouselContent className="">
-            {allLogos.map((value, index) => (
-              <CarouselItem
-                key={index}
-                className="basis-1/2 md:basis-1/4 lg:basis-1/6 my-auto"
-              >
-                <div className="">
-                  <img src={value} alt={value} className="" />
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-        </Carousel> 
+          <Carousel
+            opts={{
+              loop: true,
+            }}
+            plugins={[plugin.current]}
+            className="w-full  mx-auto "
+          >
+            <CarouselContent className="">
+              {allLogos.map((value, index) => (
+                <CarouselItem
+                  key={index}
+                  className="basis-1/2 md:basis-1/4 lg:basis-1/6 my-auto"
+                >
+                  <div className="">
+                    <img src={value} alt={value} className="" />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
         </div>
-       
       </div>
     </div>
   );

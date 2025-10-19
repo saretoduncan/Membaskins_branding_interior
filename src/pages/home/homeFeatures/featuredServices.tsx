@@ -1,9 +1,10 @@
-import carSignage from "@/assets/car_wrapper_design.webp";
+import zebraBrand from "@/assets/zebra_signage.webp"
 import CoreServicesCard from "@/components/custom_ui/common/coreServicesCard";
 import { Button } from "@/components/ui/button";
 import marpetSignage from "@/assets/marpet_signage.webp";
-import interiorDesign_1 from "@/assets/interior_design_1.webp";
-import TitleComponent from "@/components/custom_ui/common/titleComponent";
+import interiorDesign_1 from "@/assets/interior3.webp";
+import TitleComponent from "@/components/custom_ui/common/titleComponent"
+import clothBranding from "@/assets/cloth_branding.webp"
 const FeaturedServices = () => {
   return (
     <div className="grid gap-4 xl:w-[1040px] xl:mx-auto 2xl:w-[1280px]">
@@ -11,7 +12,7 @@ const FeaturedServices = () => {
 
       <section className="grid gap-4  md:grid-cols-2 lg:md:grid-cols-4">
         <CoreServicesCard
-          serviceImg={carSignage}
+          serviceImg={zebraBrand}
           title={"Comprehensive Branding Solutions"}
           description={
             "From logo design to brand strategy and stationery, we create complete brand identities that connect and inspire."
@@ -32,8 +33,8 @@ const FeaturedServices = () => {
           }
         />
         <CoreServicesCard
-          serviceImg={carSignage}
-          title={"Corporate & Casual Branding Wear"}
+          serviceImg={clothBranding}
+          title={"Corporate & Casual cloth Branding"}
           description={
             "Branded uniforms, jackets, hoodies, and sportswear for cohesive, professional representation."
           }
