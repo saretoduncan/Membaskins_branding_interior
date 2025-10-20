@@ -1,14 +1,11 @@
+import TitleComponent from "@/components/custom_ui/common/titleComponent";
 import WhyChooseUsCard from "@/components/custom_ui/common/whyChooseUsCard";
 import { HandCoins, ShieldCheck, UserStar, Zap } from "lucide-react";
 
 const WhyUsSection = () => {
   return (
     <div className="grid gap-6 xl:w-[1040px] xl:mx-auto 2xl:w-[1280px]">
-      <div>
-        <h3 className="text-center text-2xl trackin-wide font-bold ">
-          Why Business <span className="text-primary">Choose Us</span>
-        </h3>
-      </div>
+      <TitleComponent title={"Why Business Choose Us"}/>
 
       <section className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <WhyChooseUsCard
