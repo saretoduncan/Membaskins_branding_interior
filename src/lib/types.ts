@@ -5,3 +5,6 @@ export type TNavType = {
   url: string;
   icon?: LucideIcon;
 };
+export type TAnimateWrapper = {
+  children: React.ReactNode;
+};

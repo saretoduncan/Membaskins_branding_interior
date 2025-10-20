@@ -14,6 +14,7 @@ import kheLogo from "@/assets/khe_logo.webp";
 import safaricomLogo from "@/assets/safaricom_logo.webp";
 import vertoLogo from "@/assets/verto_logo.webp";
 import { useRef } from "react";
+import AnimateToTop from "@/components/animationComponents/AnimateToTop";
 
 const OurClients = () => {
   const allLogos = [
@@ -34,29 +35,34 @@ const OurClients = () => {
   );
   return (
     <div className="bg-slate-50 w-full">
-      <div className="p-4 xl:w-[1040px] mx-auto 2xl:w-[1280px] grid gap-5">
-        <TitleComponent title={"Our Clients"} />
+      <div className="p-4 xl:w-[1040px] mx-auto 2xl:w-[1280px] grid gap-5 overflow-y-hidden">
+        <AnimateToTop>
+          <TitleComponent title={"Our Clients"} />
+        </AnimateToTop>
+
         <div>
-          <Carousel
-            opts={{
-              loop: true,
-            }}
-            plugins={[plugin.current]}
-            className="w-full  mx-auto "
-          >
-            <CarouselContent className="">
-              {allLogos.map((value, index) => (
-                <CarouselItem
-                  key={index}
-                  className="basis-1/2 md:basis-1/4 lg:basis-1/6 my-auto"
-                >
-                  <div className="">
-                    <img src={value} alt={value} className="" />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-          </Carousel>
+          <AnimateToTop>
+            <Carousel
+              opts={{
+                loop: true,
+              }}
+              plugins={[plugin.current]}
+              className="w-full  mx-auto "
+            >
+              <CarouselContent className="">
+                {allLogos.map((value, index) => (
+                  <CarouselItem
+                    key={index}
+                    className="basis-1/2 md:basis-1/4 lg:basis-1/6 my-auto"
+                  >
+                    <div className="">
+                      <img src={value} alt={value} className="" />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
+          </AnimateToTop>
         </div>
       </div>
     </div>
