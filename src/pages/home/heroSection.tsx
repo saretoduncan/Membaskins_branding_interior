@@ -2,7 +2,6 @@ import heroImg from "@/assets/hero_img.webp";
 import herobg from "@/assets/hero_background.webp";
 import LinkButtons from "@/components/custom_ui/common/LinkButtons";
 import { NavlinkData } from "@/lib/navLinkData";
-import AnimateToTop from "@/components/animationComponents/AnimateToTop";
 import AnimateToLeft from "@/components/animationComponents/AnimateToLeft";
 import AnimateToRight from "@/components/animationComponents/AnimateToRight";
 const HomeHeroSection = () => {

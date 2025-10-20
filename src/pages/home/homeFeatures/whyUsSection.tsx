@@ -1,6 +1,5 @@
 import AnimateToLeft from "@/components/animationComponents/AnimateToLeft";
 import AnimateToRight from "@/components/animationComponents/AnimateToRight";
-import AnimateToTop from "@/components/animationComponents/AnimateToTop";
 import LinkButtons from "@/components/custom_ui/common/LinkButtons";
 import TitleComponent from "@/components/custom_ui/common/titleComponent";
 import WhyChooseUsCard from "@/components/custom_ui/common/whyChooseUsCard";
