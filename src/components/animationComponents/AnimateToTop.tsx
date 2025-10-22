@@ -4,7 +4,6 @@ const AnimateToTop: React.FC<TAnimateWrapper> = ({ children }) => {
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.2,
-    
   });
   return (
     <div

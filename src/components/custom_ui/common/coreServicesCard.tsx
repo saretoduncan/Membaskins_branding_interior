@@ -1,4 +1,3 @@
-
 import {
   Card,
   CardContent,
@@ -17,20 +16,20 @@ const CoreServicesCard: React.FC<ICoreServiceProps> = ({
   description,
 }) => {
   return (
-    <Card className="grid">
-      <CardContent className="grid gap-2">
-        <div
-          className="w-full bg-cover bg-center bg-no-repeat h-[150px] rounded relative"
-          style={{
-            backgroundImage: "url(" + "'" + serviceImg + "'" + ")",
-          }}
-        >
-          <div className="absolute inset-0 bg-gray-900/40 rounded top-0 bottom-0"></div>
-        </div>
-        <CardTitle>{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
-      </CardContent>
-    </Card>
+    <>
+      <Card className="grid h-full">
+        <CardContent className="grid gap-2">
+          <div
+            className="w-full bg-cover bg-center bg-no-repeat h-[150px] rounded "
+            style={{
+              backgroundImage: "url(" + "'" + serviceImg + "'" + ")",
+            }}
+          ></div>
+          <CardTitle>{title}</CardTitle>
+          <CardDescription>{description}</CardDescription>
+        </CardContent>
+      </Card>
+    </>
   );
 };
 
