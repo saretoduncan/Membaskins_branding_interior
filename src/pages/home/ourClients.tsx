@@ -13,6 +13,9 @@ import jajemeloLogo from "@/assets/jajemelo_logo.webp";
 import kheLogo from "@/assets/khe_logo.webp";
 import safaricomLogo from "@/assets/safaricom_logo.webp";
 import vertoLogo from "@/assets/verto_logo.webp";
+import saretoDentalLogo from "@/assets/SARETO_DENTAL_LOGO.webp";
+import michealLogo from "@/assets/micheals_logo.webp";
+import shellLogo from "@/assets/shell_logo.webp";
 import { useRef } from "react";
 import AnimateToTop from "@/components/animationComponents/AnimateToTop";
 
@@ -26,10 +29,13 @@ const OurClients = () => {
     kheLogo,
     safaricomLogo,
     vertoLogo,
+    saretoDentalLogo,
+    michealLogo,
+    shellLogo,
   ];
   const plugin = useRef(
     Autoplay({
-      delay: 2000,
+      delay: 3000,
       stopOnInteraction: true,
     })
   );
@@ -45,6 +51,7 @@ const OurClients = () => {
             <Carousel
               opts={{
                 loop: true,
+                align: "center",
               }}
               plugins={[plugin.current]}
               className="w-full  mx-auto "
@@ -53,11 +60,9 @@ const OurClients = () => {
                 {allLogos.map((value, index) => (
                   <CarouselItem
                     key={index}
-                    className="basis-1/2 md:basis-1/4 lg:basis-1/6 my-auto"
+                    className="basis-1/2 md:basis-1/4 flex justify-center lg:basis-1/6 my-auto"
                   >
-                    <div className="">
-                      <img src={value} alt={value} className="" />
-                    </div>
+                    <img src={value} alt={value} className="" />
                   </CarouselItem>
                 ))}
               </CarouselContent>

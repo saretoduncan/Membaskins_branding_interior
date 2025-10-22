@@ -17,7 +17,7 @@ const FeaturedServices = () => {
         </section>
       </AnimateToTop>
 
-      <section className="grid gap-4  md:grid-cols-2 lg:md:grid-cols-4 overflow-y-hidden">
+      <section className="grid gap-4  md:grid-cols-2 lg:md:grid-cols-4 md:items-stretch overflow-y-hidden">
         <AnimateToTop>
           <CoreServicesCard
             serviceImg={zebraBrand}
