@@ -1,16 +1,8 @@
-import AnimateToBottom from "@/components/animationComponents/AnimateToBottom";
 import AnimateToLeft from "@/components/animationComponents/AnimateToLeft";
 import AnimateToRight from "@/components/animationComponents/AnimateToRight";
 import AnimateToTop from "@/components/animationComponents/AnimateToTop";
 import TitleComponent from "@/components/custom_ui/common/titleComponent";
 import WhyChooseUsCard from "@/components/custom_ui/common/whyChooseUsCard";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import {
   ClockFading,
   HandHelping,
@@ -19,7 +11,6 @@ import {
   Sparkles,
   UserRoundCheck,
 } from "lucide-react";
-import React from "react";
 
 const Core_values_section = () => {
   return (
