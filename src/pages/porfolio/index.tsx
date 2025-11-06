@@ -1,5 +1,13 @@
+import PortfolioHeroSection from "./portfolioHeroSection";
+import PortforlioGallery from "./portforlioGallery";
+
 const PortfolioPage = () => {
-  return <div>PortfolioPage</div>;
+  return (
+    <>
+      <PortfolioHeroSection />
+      <PortforlioGallery/>
+    </>
+  );
 };
 
 export default PortfolioPage;
