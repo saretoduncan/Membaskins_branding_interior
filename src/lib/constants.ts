@@ -7,3 +7,7 @@ export const ENavTitle = {
 } as const;
 
 export const PHONE_NUMBER = "+254 748 047237" as const;
+export const EMAIL = "info@membaskins.co.ke";
+export const FACEBOOK_LINK= "https://www.facebook.com/share/1GQeih2izC/"
+export const INSTAGRAM_LINK="https://www.instagram.com/membaskins_branding?igsh=dWIydG8ybnFxdHhp"
+export const TIKTOK_LINK="https://www.tiktok.com/@membaskins46?is_from_webapp=1&sender_device=pc"
