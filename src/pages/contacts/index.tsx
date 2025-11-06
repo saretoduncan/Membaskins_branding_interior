@@ -1,6 +1,5 @@
 import AnimateToLeft from "@/components/animationComponents/AnimateToLeft";
 import AnimateToRight from "@/components/animationComponents/AnimateToRight";
-import AnimateToTop from "@/components/animationComponents/AnimateToTop";
 import SocialContactsComponents from "@/components/custom_ui/common/socialContactsComponents";
 import {
   Card,
