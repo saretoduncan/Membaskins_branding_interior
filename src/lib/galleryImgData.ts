@@ -54,7 +54,6 @@ import urban_interior_branding from "@/assets/urban_interior_branding.webp";
 import verto_2 from "@/assets/verto_2.webp";
 import verto_signage from "@/assets/verto_signage.webp";
 import zebra_interior_2 from "@/assets/zebra_signage_2.webp";
-import zebra_interior_1 from "@/assets/zebra_signage.webp";
 import shell_stickers from "@/assets/shell_stickers.webp";
 
 export const galleryImages: TGalleryType[] = [
