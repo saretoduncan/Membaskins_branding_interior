@@ -69,8 +69,6 @@ const PortforlioGallery = () => {
                       alt={item.alt}
                       id={index}
                       caption={item.img}
-                      height={300}
-                      width={300}
                       cropped
                     >
                       {({ ref, open }) => (
