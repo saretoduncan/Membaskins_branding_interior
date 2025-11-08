@@ -55,6 +55,7 @@ import verto_2 from "@/assets/verto_2.webp";
 import verto_signage from "@/assets/verto_signage.webp";
 import zebra_interior_2 from "@/assets/zebra_signage_2.webp";
 import zebra_interior_1 from "@/assets/zebra_signage.webp";
+import shell_stickers from "@/assets/shell_stickers.webp";
 
 export const galleryImages: TGalleryType[] = [
   {
@@ -328,9 +329,10 @@ export const galleryImages: TGalleryType[] = [
     img: zebra_interior_2,
     alt: "zebra interior 2",
   },
+
   {
-    category: "signages",
-    img: zebra_interior_1,
-    alt: "zebra interior 1",
+    category: "petrol-branding",
+    img: shell_stickers,
+    alt: "shell stickers",
   },
 ];
