@@ -16,11 +16,19 @@ import {
   TIKTOK_LINK,
 } from "@/lib/constants";
 import { Facebook, Instagram, Mail, Music2, PhoneCall } from "lucide-react";
+import { Helmet } from "react-helmet";
 import { FaWhatsapp } from "react-icons/fa";
 
 const ContactsPage = () => {
   return (
     <>
+     <Helmet>
+        <title>Contact Us</title>
+        <meta
+          name="description"
+          content="Contact Us page"
+        />
+      </Helmet>
       <div
         className="h-[200px] w-full flex items-center px-4 "
         style={{

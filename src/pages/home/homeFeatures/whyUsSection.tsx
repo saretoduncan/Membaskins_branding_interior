@@ -3,6 +3,7 @@ import AnimateToRight from "@/components/animationComponents/AnimateToRight";
 import LinkButtons from "@/components/custom_ui/common/LinkButtons";
 import TitleComponent from "@/components/custom_ui/common/titleComponent";
 import WhyChooseUsCard from "@/components/custom_ui/common/whyChooseUsCard";
+import { NavlinkData } from "@/lib/navLinkData";
 import { HandCoins, ShieldCheck, UserStar, Zap } from "lucide-react";
 
 const WhyUsSection = () => {
@@ -55,7 +56,7 @@ const WhyUsSection = () => {
 
       <section className="flex justify-center">
         <AnimateToRight>
-           <LinkButtons url="" title={"Learn More"} />
+           <LinkButtons url={NavlinkData.SERVICE_PAGE.url} title={"Learn More"} />
         </AnimateToRight>
        
       </section>

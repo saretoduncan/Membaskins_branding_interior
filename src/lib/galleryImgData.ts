@@ -54,8 +54,11 @@ import urban_interior_branding from "@/assets/urban_interior_branding.webp";
 import verto_2 from "@/assets/verto_2.webp";
 import verto_signage from "@/assets/verto_signage.webp";
 import zebra_interior_2 from "@/assets/zebra_signage_2.webp";
-import zebra_interior_1 from "@/assets/zebra_signage.webp";
 import shell_stickers from "@/assets/shell_stickers.webp";
+import aluco_1 from "@/assets/Auco.webp";
+import aluco_2 from "@/assets/aluco_clamping_2.webp";
+import seven_petrol_station from "@/assets/sevens_petrol_station.webp";
+import pylot_img from "@/assets/pylotSignages.webp"
 
 export const galleryImages: TGalleryType[] = [
   {
@@ -200,6 +203,11 @@ export const galleryImages: TGalleryType[] = [
     alt: "muslim pylon signage",
   },
   {
+    category:"pylon-signages",
+    img: pylot_img,
+    alt:"pylot signages"
+  },
+  {
     category: "signages",
     img: i_love_mwea_signage,
     alt: "i love mwea signage",
@@ -334,5 +342,20 @@ export const galleryImages: TGalleryType[] = [
     category: "petrol-branding",
     img: shell_stickers,
     alt: "shell stickers",
+  },
+  {
+    category: "aluco-clamping",
+    img: aluco_1,
+    alt: "aluco clamping",
+  },
+  {
+    category: "aluco-clamping",
+    img: aluco_2,
+    alt: "aluco clamping",
+  },
+  {
+    category: "petrol-branding",
+    img: seven_petrol_station,
+    alt: "seven petrol station",
   },
 ];

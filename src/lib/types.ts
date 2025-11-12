@@ -15,7 +15,7 @@ export type TGalleryCategoryType =
   | "interior-branding"
   | "pylon-signages"
   | "LED-screen"
-  | "All";
+  | "All"|"aluco-clamping";
 export type TGalleryType = {
   category: TGalleryCategoryType;
   img: string;
