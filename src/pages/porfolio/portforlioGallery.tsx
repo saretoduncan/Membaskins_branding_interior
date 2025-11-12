@@ -51,8 +51,8 @@ const PortforlioGallery = () => {
                 <SelectItem value={EGallaryCategory["petrol-branding"]}>
                   {EGallaryCategory["petrol-branding"]}
                 </SelectItem>
-                <SelectItem value={EGallaryCategory["interior-branding"]}>
-                  {EGallaryCategory["interior-branding"]}
+                <SelectItem value={EGallaryCategory["aluco-clamping"]}>
+                  {EGallaryCategory["aluco-clamping"]}
                 </SelectItem>
               </SelectContent>
             </Select>
@@ -69,7 +69,8 @@ const PortforlioGallery = () => {
                       alt={item.alt}
                       id={index}
                       caption={item.img}
-                      cropped
+                      cropped={true}
+                      
                     >
                       {({ ref, open }) => (
                         <img

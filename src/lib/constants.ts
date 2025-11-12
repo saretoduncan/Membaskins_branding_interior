@@ -27,4 +27,5 @@ export const EGallaryCategory: Record<
   "pylon-signages": "pylon-signages",
   "LED-screen": "LED-screen",
   All: "All",
+  "aluco-clamping": "aluco-clamping"
 };

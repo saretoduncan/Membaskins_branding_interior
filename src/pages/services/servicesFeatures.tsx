@@ -2,14 +2,15 @@ import TitleComponent from "@/components/custom_ui/common/titleComponent";
 import largePrintImg from "@/assets/largePrintimg.webp";
 import AnimateToRight from "@/components/animationComponents/AnimateToRight";
 import AnimateToLeft from "@/components/animationComponents/AnimateToLeft";
-import marpet_signage from "@/assets/marpet_signage.webp";
+import bethelia_signage from "@/assets/Bethelia_signage.webp";
 import total_beauty_interior from "@/assets/total_beauty_interior.webp";
 import car_wrapper from "@/assets/car_wrapper_design.webp";
 import billboard_img from "@/assets/Billboard_sample_img.webp";
-import eka_petrol from "@/assets/eka_petrol_station.webp";
+import eka_petrol from "@/assets/sevens_petrol_station.webp";
 import cloth_branding from "@/assets/cloth_branding.webp";
 import { FaWhatsapp } from "react-icons/fa";
 import mug_printing_img from "@/assets/mug_printing.webp";
+import aluco_clamping_2 from '@/assets/aluco_clamping_2.webp'
 const ServicesFeatures = () => {
   return (
     <div className="w-full bg-slate-50">
@@ -109,7 +110,7 @@ const ServicesFeatures = () => {
               <AnimateToRight>
                 <section>
                   <img
-                    src={marpet_signage}
+                    src={bethelia_signage}
                     alt="Signage image"
                     className="rounded-lg object-cover w-full h-full md:h-[300px]"
                   />
@@ -231,7 +232,7 @@ const ServicesFeatures = () => {
                     <li className="">LED Screen</li>
                     <li className="">Billboard Signage</li>
                     <li className="">Road Signage</li>
-                    <li className="">Phylon Signage</li>
+                    <li className="">Pylon Signage</li>
                   </ul>
                   <div className="flex my-2">
                     <a
@@ -404,6 +405,54 @@ const ServicesFeatures = () => {
                   />
                 </section>
               </AnimateToRight>
+            </section>
+          </div>
+          <div className="grid md:grid-cols-2 gap-2 md:gap-6">
+            <section className="my-auto">
+              <AnimateToRight>
+                <div className="flex flex-col gap-1 justify-center">
+                  <h3 className="font-bold text-lg text-primary lg:text-xl">
+                    Metal and Fabrication
+                  </h3>
+                  <p>
+                    Strengthen your brand’s presence with our expertly crafted
+                    metal and fabrication solutions for outdoor advertising.
+                    From durable billboards and structural frames to custom
+                    street displays and event signage, we design and build
+                    high-quality installations that command attention, withstand
+                    the elements, and promote your business with lasting impact.
+                    Our precision work also extends to Aluco clamping,
+                    delivering sleek, modern finishes that enhance aesthetics,
+                    protect surfaces, and give your brand a polished,
+                    professional look.
+                  </p>
+
+                  <div className="flex my-2">
+                    <a
+                      href="https://wa.me/254748047237?text=Hello,%20I%20am%20interested%20in%20your%20services"
+                      className="bg-green-600 rounded text-white flex  px-2 py-1 gap-2 items-center hover:bg-green-400 transition-all ease-in-out duration-300"
+                      target="_blank"
+                    >
+                      <div className="p-2  bg-green-900 rounded-full">
+                        <FaWhatsapp className="text-lg" />
+                      </div>
+
+                      <span className="font-bold capitalize ">Get Quote</span>
+                    </a>
+                  </div>
+                </div>
+              </AnimateToRight>
+            </section>
+            <section>
+              <AnimateToLeft>
+                <section>
+                  <img
+                    src={aluco_clamping_2}
+                    alt="Cloth branding "
+                    className="rounded-lg object-cover w-full h-full md:h-[300px]"
+                  />
+                </section>
+              </AnimateToLeft>
             </section>
           </div>
         </div>

@@ -11,7 +11,7 @@ import {
   Music2,
 } from "lucide-react";
 import ReachOutListComponent from "./reachOutListComponent";
-import { PHONE_NUMBER } from "@/lib/constants";
+import { FACEBOOK_LINK, INSTAGRAM_LINK, PHONE_NUMBER, TIKTOK_LINK } from "@/lib/constants";
 import SocialsComponent from "./socialsComponent";
 import AnimateToRight from "@/components/animationComponents/AnimateToRight";
 import AnimateToLeft from "@/components/animationComponents/AnimateToLeft";
@@ -102,7 +102,7 @@ const Footer = () => {
                     <SocialsComponent
                       title={"Facebook"}
                       icon={Facebook}
-                      url={"https://www.facebook.com/share/1GQeih2izC/"}
+                      url={FACEBOOK_LINK}
                     />
                   </li>
                   <li>
@@ -110,7 +110,7 @@ const Footer = () => {
                       title={"Instagram"}
                       icon={Instagram}
                       url={
-                        "https://www.instagram.com/membaskins?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                      INSTAGRAM_LINK
                       }
                     />
                   </li>
@@ -118,7 +118,7 @@ const Footer = () => {
                     <SocialsComponent
                       icon={Music2}
                       title={"Tiktok"}
-                      url="https://www.tiktok.com/@membaskins46?is_from_webapp=1&sender_device=pc"
+                      url={TIKTOK_LINK}
                     />
                   </li>
                 </ul>
